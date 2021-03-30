@@ -18,17 +18,9 @@
     var longest = 0;
     var i = 0;
     var usedCharacters = [];
-    var noDoubles = "";
-    var doubleChar = '';
-    
-    for (i = 0; i < s.length; i++) {
-        if (s[i] != doubleChar) 
-            noDoubles += (s[i]);
-        
-        doubleChar = s[i];
-    }
     
     for (i = 0; i < s.length; i++) {       
+        
         if (usedCharacters.indexOf(s[i]) != -1) {
             // Save current string as longest string
             if (usedCharacters.length > longest)
@@ -43,7 +35,6 @@
                 // Otherwise, we remove the initial characters.  They are no longer part of the ship, part of the crew.
                 usedCharacters.shift();
             }
-            // usedCharacters = [];
         }
         
         usedCharacters.push(s[i]);
@@ -57,5 +48,6 @@
     return longest;
 };
 
-// 03/29/2021 21:06	Accepted	736 ms	48.7 MB	javascript
-// Included a bunch of console.logs
+// 03/29/2021 21:09	Accepted	96 ms	40.3 MB	javascript
+// 03/29/2021 21:08	Accepted	100 ms	40.4 MB	javascript
+// NO BS; STRAIGHT SHIFTIN'

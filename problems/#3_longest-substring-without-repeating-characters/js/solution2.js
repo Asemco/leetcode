@@ -57,5 +57,5 @@
     return longest;
 };
 
-// 03/29/2021 21:06	Accepted	736 ms	48.7 MB	javascript
-// Included a bunch of console.logs
+// 03/29/2021 21:06	Accepted	116 ms	41.9 MB	javascript
+// Includes an initial run through to remove duplicates 
